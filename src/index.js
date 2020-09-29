@@ -6,7 +6,7 @@ let id = 0;
 let list = [];
 
 document.addEventListener('keyup', (event)=>{
-    if (event.which === 13){
+    if (event.which === 13 && input.value !== ''){
         let task = input.value;
         let listItem = document.createElement('div');
 
